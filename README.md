@@ -353,7 +353,7 @@ apktool b memory-game -o game.apk
 	jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore key.keystore game.apk alias_name
 	```
 	
-	Com isso a apk ficou pronta para ser instalada. Porém vale ressaltar que da maneira que foi assinada ela apenas pode ser instalada em dispositivos/emuladores com nível de API **inferior** a 30 (Android 10), utilizei API 28 (Android 8). Caso precise [aqui](https://developer.android.com/studio/run/managing-avds#createavd) tem um tutorial de como criar um emulador pelo Android Studio.
+	Com isso a apk ficou pronta para ser instalada. Porém vale ressaltar que da maneira que foi assinada ela apenas pode ser instalada em dispositivos/emuladores com nível de API **inferior** a 30 (Android 11), utilizei API 28 (Android 9). Caso precise [aqui](https://developer.android.com/studio/run/managing-avds#createavd) tem um tutorial de como criar um emulador pelo Android Studio.
 
 - Instalei a apk (apenas arrastei o arquivo .apk para o emulador)
 
