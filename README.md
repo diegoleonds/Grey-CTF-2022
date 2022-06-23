@@ -29,7 +29,7 @@ Foram resolvidos: [Memory Game 1](https://ctfd.nusgreyhats.org/challenges#%F0%9F
 file memory-game.apk
 ```
 
-- Após ver que se tratava de .zip (pode-se dizer que uma apk é um zip) tentei descompilar o arquivo com o **apktool**
+- Após ver que se tratava de .zip (pode se dizer que uma apk é um zip) tentei descompilar o arquivo com o **apktool**
 
 ```
 apktool d memory-game.apk
@@ -39,7 +39,7 @@ apktool d memory-game.apk
 
 ### Memory Game 1
 
-- Li a descrição do exercício e isso me chamou a atenção **Do you know where the image assets are stored? I've made a nice drawing for you**: por padrão em projetos Android imagens são guardadas nas pastas **drawable** e **drawable-sufixo** que se encontram dentro de **res**, então fui buscar nelas
+- Li a descrição do exercício e isso me chamou a atenção: **Do you know where the image assets are stored? I've made a nice drawing for you**. Por padrão em projetos Android imagens são guardadas nas pastas **drawable** e **drawable-sufixo** que se encontram dentro de **res**, então fui buscar nelas
 
 ```
 cd memory-game/res/drawable-hdpi
@@ -51,7 +51,7 @@ ls
 ### Memory Game 2
 Para resolver tive que alterar arquivos **.smali** e para isso usei essa [tabela](http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html) como referência para entender melhor o código
 
-- Ao ler o enunciado tive duas ideias alterar a lógica:
+- Ao ler o enunciado pensei em alterar a lógica:
 	- Das regras do jogo para não precisar jogar ou deixar o jogo fácil
 	- Por trás do log, para o log me dar a flag logo no início
 
@@ -113,7 +113,7 @@ public BoardConfiguration(int i) {
         }
     }
 ```
-Minha primeira ideia foi colocar os mesmos valores do case 1 no case 6 para fazer a maior dificuldade do jogo ter as mesmas características da menor. Em Java ficaria assim:
+Minha primeira ideia foi colocar os mesmos valores do case 1 no case 6 para fazer a **maior dificuldade do jogo ter as mesmas características da menor**. Em Java ficaria assim:
 
 ``` java
 public BoardConfiguration(int i) {
