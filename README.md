@@ -17,7 +17,7 @@ sudo snap install android-studio --classic
 ```
 
 ## Desafios
-Foram resolvidos: [Memory Game 1](https://ctfd.nusgreyhats.org/challenges#%F0%9F%8D%AD%20Memory%20Game%20(Part%201%29-38) e [Memory Game 2](https://ctfd.nusgreyhats.org/challenges#%F0%9F%A9%B8%20Memory%20Game%20(Part%202%29-39), ambos compartilham o mesmo código fonte que pode ser baixado em qualquer um dos enunciados.
+Foram resolvidos: [Memory Game 1](https://ctfd.nusgreyhats.org/challenges#%F0%9F%8D%AD%20Memory%20Game%20%28Part%201%29-38) e [Memory Game 2](https://ctfd.nusgreyhats.org/challenges#%F0%9F%A9%B8%20Memory%20Game%20%28Part%202%29-39), ambos compartilham o mesmo código fonte que pode ser baixado em qualquer um dos enunciados.
 
 ## Resolução
 
