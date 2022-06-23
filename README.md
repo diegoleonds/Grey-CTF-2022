@@ -3,17 +3,27 @@
 ## Ferramentas utilizadas:
 
 -  [Apktool](https://ibotpeaches.github.io/Apktool/install/)
-Ferramenta para engenharia reversa de arquivos apk. Foi utilizada para descompilar a apk e recompilar novamente após as alterações feitas. Instalação:
+  
+	Ferramenta para engenharia reversa de arquivos apk. Foi utilizada para descompilar a apk e recompilar novamente após as alterações feitas. Instalação:
 
 ```
 sudo apt-get install apktool 
 ```
 
 - [Android Studio](https://developer.android.com/studio?hl=pt&gclid=CjwKCAjw-8qVBhANEiwAfjXLrsKFsxQE9Puoyua35lKIzzop74UQr-O2Q_fcyBjb1qcg-8CQTPPNYRoCQTIQAvD_BwE&gclsrc=aw.ds)
-IDE para desenvolvimento Android. Foi utilizada para editar os arquivos, ler o log e utilizar emulador Android com API 28. Instalação:
+ 
+	IDE para desenvolvimento Android. Foi utilizada para editar os arquivos, ler o log e utilizar emulador Android com API 28. Instalação:
 
 ```
 sudo snap install android-studio --classic
+```
+
+- [JDK](https://www.oracle.com/java/technologies/downloads/)
+
+	Kit de desenvolvimento do Java. Foi utilizado para assinar a apk com o **jarsigner** e para gerar a chave de assinatura com o **keytool** Instalação:
+
+```
+sudo apt install default-jdk
 ```
 
 ## Desafios
