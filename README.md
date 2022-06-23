@@ -20,7 +20,7 @@ sudo snap install android-studio --classic
 
 - [JDK](https://www.oracle.com/java/technologies/downloads/)
 
-	Kit de desenvolvimento do Java. Foi utilizado para assinar a apk com o **jarsigner** e para gerar a chave de assinatura com o **keytool** Instalação:
+	Kit de desenvolvimento do Java. Foi utilizado para assinar a apk com o **jarsigner** e para gerar a chave de assinatura com o **keytool**. Instalação:
 
 ```
 sudo apt install default-jdk
