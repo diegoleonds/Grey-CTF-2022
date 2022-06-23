@@ -35,7 +35,7 @@ file memory-game.apk
 apktool d memory-game.apk
 ```
 
-- Esse comando gerou uma pasta **memory-game** com os arquivos da apk decompilada
+- Esse comando gerou uma pasta **memory-game** com os arquivos da apk descompilada
 
 ### Memory Game 1
 
@@ -46,7 +46,7 @@ cd memory-game/res/drawable-hdpi
 ls
 ```
 
-- No output apareceram vários arquivos de imagem mas o que me chamou a atenção foi o **flag.png**, abri o arquivo e lá estava a flag
+- No output apareceram vários arquivos de imagem mas o que me chamou a atenção foi o **flag.png**, abri o arquivo e lá estava a flag: **grey{th1s_1s_dr4w4bl3_bu7_e4s13r_t0_7yp3}**
 
 ### Memory Game 2
 Para resolver tive que alterar arquivos **.smali** e para isso usei essa [tabela](http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html) como referência para entender melhor o código
@@ -329,3 +329,25 @@ que em **smali** ficou:
 ```
 apktool b memory-game -o game.apk
 ```
+
+- Assinei a apk para que pudesse ser instalada no emulador da seguinte forma:
+	- Primeiro gerei uma chave:
+	
+	```
+	keytool -genkey -v -keystore key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+	```
+	
+	- Depois usei a chave gerada para assinar a apk:
+	
+	```
+	jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore key.keystore game.apk alias_name
+	```
+	
+	Com isso a apk ficou pronta para ser instalada. Porém vale ressaltar que da maneira que foi assinada ela apenas pode ser instalada em dispositivos/emuladores com nível de API **inferior** a 30 (Android 10), utilizei API 28 (Android 8). Caso precise [aqui](https://developer.android.com/studio/run/managing-avds#createavd) tem um tutorial de como criar um emulador pelo Android Studio.
+
+- Instalei a apk (apenas arrastei o arquivo .apk para o emulador)
+
+- Não consegui acessar a aba de log com esse projeto, então apenas abri outro para isso
+
+- Rodei o jogo, selecionei a maior dificuldade e joguei, deixei o log no **Verbose** e filtrei pela palavra **grey**.
+Após terminar o jogo a flag apareceu no log: **grey{hum4n_m3m0ry_i5_4lw4y5_b3tt3r_th4n_r4nd0m_4cc3ss_m3m0ry}**
