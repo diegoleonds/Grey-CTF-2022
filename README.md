@@ -361,3 +361,9 @@ apktool b memory-game -o game.apk
 
 - Rodei o jogo, selecionei a maior dificuldade e joguei, deixei o log no **Verbose** e filtrei pela palavra **grey**.
 Após terminar o jogo a flag apareceu no log: **grey{hum4n_m3m0ry_i5_4lw4y5_b3tt3r_th4n_r4nd0m_4cc3ss_m3m0ry}**
+
+# Referências
+
+- Decompile and Recompile An android APK using Apktool: https://medium.com/@sandeepcirusanagunla/decompile-and-recompile-an-android-apk-using-apktool-3d84c2055a82
+- Dalvik opcodes: http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html
+- What's the best way to learn Smali (and how/when to use Dalvik VM opcodes): https://stackoverflow.com/questions/5656804/whats-the-best-way-to-learn-smali-and-how-when-to-use-dalvik-vm-opcodes
